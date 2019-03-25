@@ -67,6 +67,31 @@ table {
   max-width: 1080px;
   margin: 0 auto; }
 
+.btn {
+  font-family: Helvetica;
+  border: 0;
+  border-radius: 100px; }
+
+.btn:hover {
+  cursor: pointer; }
+
+.btn-login {
+  border: 1px solid #ccc;
+  padding: 5px 14px;
+  background: none;
+  color: #000; }
+
+.btn-primary {
+  font-size: 18px;
+  line-height: 1.33;
+  color: #fff;
+  background-color: #449d44;
+  transition: all 0.3s;
+  padding: 14px 30px; }
+
+.btn-primary:hover {
+  background-color: #398439; }
+
 /*
 =================================================
   NAVBAR
@@ -150,7 +175,7 @@ table {
     .footer-row .footer-nav ul {
       display: flex;
       flex-wrap: wrap;
-      width: 20rem;
+      width: 25rem;
       justify-content: space-between; }
 
 /*# sourceMappingURL=main.css.map */
