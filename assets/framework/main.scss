@@ -47,14 +47,26 @@ $gutter-width: 1%;  // Preference based : Adds left & right padding to columns
 
    .card-body {
      font-size: 1em;
+     text-align: center;
+     padding: 1em;
+
+     p {
+       line-height: 2;
+       opacity: .7;
+       padding-bottom: 2.5em;
+     }
 
      .card-title {
-      font-size: 3em;
-      font-weight: bold;
+        font-size: 1em;
+        font-weight: bold;
+        margin-top: 1.25em;
+        margin-bottom: 1.25em;
       }
 
      .card-link {
         border-top: .1em solid rgba(151,151,151,0.1);
+        padding-top: 1.5em;
+        padding-bottom: 1.5em; 
         
         a {
           text-decoration: none;
