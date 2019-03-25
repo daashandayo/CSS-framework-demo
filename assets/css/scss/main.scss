@@ -1,13 +1,55 @@
-@import '../../framework/main.scss';
+@import "../../framework/main.scss";
 
+/*
+=================================================
+  BODY
+=================================================
+*/
 .container {
-    @include container(1080px);
+  @include container(1080px);
 }
 
-.row {
-    @include grid-row;
+
+/*
+=================================================
+  NAVBAR
+=================================================
+*/
+
+.nav-row {
+  @include grid-row;
+  justify-content: space-between;
 }
 
-.col-nav {
-    @include grid-unit(4)
+.nav-link-row {
+  @include grid-row;
+  width: 30em;
+  justify-content: space-evenly;
+}
+
+/*
+=================================================
+  MAIN
+=================================================
+*/
+
+.main-row {
+  @include grid-row;
+}
+
+.full-col {
+  @include grid-unit(12);
+  padding: 5rem;
+  text-align: center;
+
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  h5 {
+    margin-bottom: 2rem;
+  }
+
 }

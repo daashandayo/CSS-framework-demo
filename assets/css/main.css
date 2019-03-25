@@ -5,8 +5,7 @@
 *,
 *:after,
 *:before {
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -26,55 +25,78 @@ time, mark, audio, video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline;
-}
+  vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-  display: block;
-}
+  display: block; }
 
 body {
-  line-height: 1;
-}
+  line-height: 1; }
 
 ol, ul {
-  list-style: none;
-}
+  list-style: none; }
 
 blockquote, q {
-  quotes: none;
-}
+  quotes: none; }
 
 blockquote:before, blockquote:after,
 q:before, q:after {
-  content: "";
-  content: none;
-}
+  content: '';
+  content: none; }
 
 table {
   border-collapse: collapse;
-  border-spacing: 0;
-}
+  border-spacing: 0; }
 
 /*
 =================================================
   GRID
 =================================================
 */
+/*
+=================================================
+  BODY
+=================================================
+*/
 .container {
   max-width: 1080px;
-  margin: 0 auto;
-}
+  margin: 0 auto; }
 
-.row {
+/*
+=================================================
+  NAVBAR
+=================================================
+*/
+.nav-row {
   display: flex;
   flex-wrap: wrap;
-}
+  justify-content: space-between; }
 
-.col-nav {
-  width: 33.32%;
-}
+.nav-link-row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 30em;
+  justify-content: space-evenly; }
+
+/*
+=================================================
+  MAIN
+=================================================
+*/
+.main-row {
+  display: flex;
+  flex-wrap: wrap; }
+
+.full-col {
+  width: 99.96%;
+  padding: 5rem;
+  text-align: center; }
+  .full-col h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem; }
+  .full-col h5 {
+    margin-bottom: 2rem; }
 
 /*# sourceMappingURL=main.css.map */
