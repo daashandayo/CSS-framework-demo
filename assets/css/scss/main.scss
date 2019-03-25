@@ -1,1 +1,13 @@
 @import '../../framework/main.scss';
+
+.container {
+    @include container(1080px);
+}
+
+.row {
+    @include grid-row;
+}
+
+.col-nav {
+    @include grid-unit(4)
+}
