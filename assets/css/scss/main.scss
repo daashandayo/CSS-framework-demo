@@ -68,4 +68,38 @@
   }
 }
 
+/*
+=================================================
+  FOOTER
+=================================================
+*/
+
+.footer-row {
+  @include grid-row;
+  @include container(1080px);
+
+  .copyright {
+    @include grid-unit(5);
+  }
+
+  .footer-nav {
+    @include grid-unit(7);
+    @include grid-row;
+    justify-content: flex-end;
+
+    ul {
+      @include grid-row;
+      width: 25rem;
+      justify-content: space-between;
+
+      li {
+        
+      }
+    }
+
+
+  }
+
+
+}
 
