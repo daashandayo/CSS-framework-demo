@@ -17,6 +17,7 @@
 */
 
 .nav-row {
+  @include container(1080px);
   @include grid-row;
   justify-content: space-between;
 }
@@ -34,6 +35,7 @@
 */
 
 .main-row {
+  @include container(1080px);
   @include grid-row;
 }
 
@@ -53,3 +55,17 @@
   }
 
 }
+
+.row {
+  @include grid-row;
+}
+
+.col {
+  @include grid-unit(4);
+  @include grid-gutter(2%);
+  .card {
+    @include card;
+  }
+}
+
+
