@@ -1,0 +1,35 @@
+@import '_reset';
+
+/*
+=================================================
+  GRID
+=================================================
+*/
+
+$column-width: 8.33%; // 12 Columns : 100/12 = 8.33
+$gutter-width: 1%;  // Preference based : Adds left & right padding to columns
+
+@mixin grid-row {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+@mixin grid-unit($span) {
+  width: $column-width*$span;
+}
+
+@mixin grid-gutter($value: $gutter-width) {
+  padding-left: $value/2;
+  padding-right: $value/2;
+}
+
+@mixin container($width: 940px) {
+  max-width: $width;
+  margin: 0 auto;
+}
+
+@mixin responsive-img {
+  max-width: 100%;
+  height: auto;
+}
