@@ -24,35 +24,16 @@ header {
   BUTTON
 =================================================
 */
-
 .btn {
-  font-family: Helvetica;
-  border: 0;
-  border-radius: 100px;
+  @include btn;
 }
 
-.btn:hover {
-  cursor: pointer;
-}
-
-.btn-login {
-  border: 1px solid #ccc;
-  padding: 5px 14px;
-  background: none;
-  color: #000;
+.btn-transparent {
+  @include btn-transparent;
 }
 
 .btn-primary {
-  font-size: 18px;
-  line-height: 1.33;
-  color: #fff;
-  background-color: #449d44;
-  transition: all 0.3s;
-  padding: 14px 30px;
-}
-
-.btn-primary:hover {
-  background-color:  #398439;
+  @include btn-primary;
 }
 
 /*
