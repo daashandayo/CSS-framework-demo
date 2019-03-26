@@ -157,10 +157,14 @@ header {
 .col {
   @include grid-unit(4);
   @include grid-gutter(2%);
+  padding-bottom: 1.5rem;
   .card {
     @include card;
   }
 
+  @media screen and(max-width: 768px){
+    @include grid-unit(12);
+  }
 
 }
 
@@ -175,13 +179,26 @@ header {
   @include container(1080px);
   padding-top: 6em;
   padding-bottom: 2em;
+  font-size: 0.8rem;
 
-  @media screen and(max-width: 990px){
+  @media screen and(max-width: 1080px){
     @include container(750px);
+
+    .footer-nav {
+      ul {
+        flex-direction: column;
+      }
+    }
+  }
+  @media screen and(max-width: 768px){
+    padding-left: 1rem;
   }
 
   .copyright {
     @include grid-unit(5);
+    @media screen and(max-width:768px){
+      @include grid-unit(12);
+    }
   }
 
   .footer-nav {
@@ -189,16 +206,25 @@ header {
     @include grid-row;
     justify-content: flex-end;
 
+    
+
     ul {
       @include grid-row;
       width: 25rem;
       justify-content: space-between;
 
       li {
-        
+        padding-bottom: 1rem;
       }
     }
 
+    @media screen and(max-width:768px){
+      @include grid-unit(12);
+      ul {
+        padding-top: 1rem;
+        width: 100%;
+      }
+    }
 
   }
 
