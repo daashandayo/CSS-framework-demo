@@ -1,0 +1,190 @@
+@import "../../framework/main.scss";
+
+/*
+=================================================
+  BODY
+=================================================
+*/
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background: #f4f2ed;
+}
+
+.container {
+  @include container(1080px);
+}
+
+
+/*
+=================================================
+  BUTTON
+=================================================
+*/
+.btn {
+  @include btn;
+}
+
+.btn-transparent {
+  @include btn-transparent;
+}
+
+.btn-primary {
+  @include btn-primary;
+}
+
+/*
+=================================================
+  NAVBAR
+=================================================
+*/
+
+.nav-row {
+  @include container(1080px);
+  @include grid-row;
+  justify-content: space-between;
+  @include pt(2em);
+  align-items: center;
+
+  h2 {
+    font-size: 1.5em;
+    text-transform: uppercase;
+  }
+  
+
+  @media screen and(max-width: 1080px) {
+    @include container(750px);
+    justify-content: start;
+
+    .col-nav:last-child {
+      @include ml(auto);
+    }
+  }
+
+  @media screen and(max-width: 768px){
+    .col-nav-middle, .col-nav:last-child {
+      display: none;
+    }
+    justify-content: center;
+  }
+
+}
+
+.nav-link-row {
+  @include grid-row;
+  width: 30em;
+  justify-content: space-evenly;
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+
+  a:visited{
+    color: black;
+  }
+}
+
+.full-col {
+  @include jumbotron;
+}
+
+/*
+=================================================
+  MAIN
+=================================================
+*/
+
+.main-row {
+  @include container(1080px);
+  @include grid-row;
+
+  @media screen and(max-width: 1080px){
+    @include container(750px);
+  }
+  
+}
+
+
+.row {
+  @include grid-row;
+}
+
+.col {
+  @include grid-unit(4);
+  @include grid-gutter(2%);
+  @include pb(1.5rem);
+  .card {
+    @include card;
+  }
+
+  @media screen and(max-width: 768px){
+    @include grid-unit(12);
+  }
+
+}
+
+/*
+=================================================
+  FOOTER
+=================================================
+*/
+
+.footer-row {
+  @include grid-row;
+  @include container(1080px);
+  @include p(6em,0,2em,0);
+  font-size: 0.8rem;
+
+  @media screen and(max-width: 1080px){
+    @include container(750px);
+
+    .footer-nav {
+      ul {
+        flex-direction: column;
+      }
+    }
+  }
+  @media screen and(max-width: 768px){
+    @include pl(1rem);
+  }
+
+  .copyright {
+    @include grid-unit(5);
+    @media screen and(max-width:768px){
+      @include grid-unit(12);
+    }
+  }
+
+  .footer-nav {
+    @include grid-unit(7);
+    @include grid-row;
+    justify-content: flex-end;
+
+    
+
+    ul {
+      @include grid-row;
+      width: 25rem;
+      justify-content: space-between;
+
+      li {
+        @include pb(1rem);
+      }
+    }
+
+    @media screen and(max-width:768px){
+      @include grid-unit(12);
+      ul {
+        @include pt(1rem);
+        width: 100%;
+      }
+    }
+
+  }
+
+
+}
+
