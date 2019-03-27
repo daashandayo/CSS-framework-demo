@@ -15,3 +15,5 @@ This project emphasizes building our own Grid based framework.
 
 * Darshan - [Github Profile](https://github.com/daashandayo)
 * Raphael - [Github Profile](https://github.com/oghenebrume50)
+
+Hosted via Github Pages on [https://daashandayo.github.io/CSS-framework-demo/](https://daashandayo.github.io/CSS-framework-demo/index.html)
