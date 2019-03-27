@@ -91,8 +91,6 @@ $gutter-width: 1%;  // Preference based : Adds left & right padding to columns
   }
 }
 
-
-
 @mixin btn-transparent {
   border: 1px solid #ccc;
   padding: 5px 14px;
@@ -113,3 +111,62 @@ $gutter-width: 1%;  // Preference based : Adds left & right padding to columns
   }
 }
 
+@mixin btn-alert {
+  font-size: 18px;
+  line-height: 1.33;
+  color: #fff;
+  background-color: #9d4444;
+  transition: all 0.3s;
+  padding: 14px 30px;
+
+  :hover {
+    background-color: #9d8439;
+  }
+}
+
+
+/*
+=================================================
+  PADDING & MARGIN
+=================================================
+*/
+
+@mixin p($top, $right, $bottom, $left) {
+  padding: $top $right $bottom $left;
+}
+
+@mixin pt($top) {
+  padding-top: $top;
+}
+
+@mixin pr($right) {
+  padding-right: $right;
+}
+
+@mixin pb($bottom) {
+  padding-bottom: $bottom;
+}
+
+@mixin pl($left) {
+  padding-left: $left;
+}
+
+@mixin m($top, $right, $bottom, $left) {
+  margin: $top $right $bottom $left;
+}
+
+@mixin mt($top) {
+  margin-top: $top;
+}
+
+@mixin mr($right) {
+  margin-right: $right;
+}
+
+@mixin mb($bottom) {
+  margin-bottom: $bottom;
+}
+
+@mixin ml($left) {
+  margin-left: $left;
+}
