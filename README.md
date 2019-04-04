@@ -13,5 +13,5 @@ This project emphasizes building our own Grid based framework.
 
 ## Contributors
 
-* Darshan - [Github Profile](https://github.com/daashandayo)
+* Darshan J - [Github Profile](https://github.com/daashandayo)
 * Raphael - [Github Profile](https://github.com/oghenebrume50)
